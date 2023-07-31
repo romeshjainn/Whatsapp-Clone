@@ -1,0 +1,284 @@
+
+::-webkit-scrollbar {
+    height: 10px !important;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    background: linear-gradient(to bottom, #00A884 20%, #FFFFFF 20%);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 15px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.sep {
+    width: 90%;
+    height: .5px;
+    background-color: rgb(184, 175, 175);
+    float: right;
+}
+
+img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.svg {
+    cursor: pointer;
+    width: 25px;
+}
+
+
+
+.chatBox {
+    height: 100%;
+    width: 43vw;
+    background-color: #fff;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.header {
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #F0F2F5;
+    gap: 55%;
+    height: 3rem;
+    padding: 5px 20px;
+    width: 41.5vw;
+    align-items: center;
+    position: fixed;
+    top: 10;
+    left: 10;
+    right: 10;
+}
+
+.myProfile {
+    width: 15%;
+    cursor: pointer;
+}
+
+.headerUl {
+    float: right;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.threeDot{
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    padding: 10px;
+    top: 40px;
+    left: 300px;
+    z-index: 1;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    /* visibility: none; */
+    display: none;
+}
+.hovr:hover + .threeDot {
+    cursor: context-menu;
+    display: block;
+    width: 300px;
+}
+.threeDot ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: .67rem;
+}
+.sepr{
+    width: 132px;
+    height: .5px;
+    background-color: rgb(221, 201, 201);
+}
+.searchBar {
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    width: 41.5vw;
+    height: 3rem;
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    left: 15px;
+    right: px;
+    border: .5px solid rgb(235, 224, 224);
+}
+
+.Bar {
+    width: 90%;
+}
+
+.Bar input {
+    width: 95%;
+    background-color: #F0F2F5;
+    border: none;
+    outline: none;
+
+    padding: 10px;
+    font-size: .7rem;
+    border-radius: 10px;
+}
+
+.barIcon {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.archive {
+    display: flex;
+    padding: 0px 20px;
+    min-height: 3rem;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.archLogo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.archImg {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.archiveTxt {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.greenTxt {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 10%;
+    color: rgb(6, 144, 6);
+}
+.john{
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.a {
+    display: flex;
+    min-height: 3.5rem;
+    padding: 0px 15px 0px 15px;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    gap: 1rem;
+}
+.abc{
+    min-height: 2.6rem;
+    background-color: rgb(255, 248, 248);
+}
+.profile {
+    width: 10%;
+}
+
+.numMsg {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80%;
+}
+
+.name {
+    font-weight: 550;
+    /* font-size: .7rem; */
+}
+
+.msg {
+    font-size: .6rem;
+}
+
+.timeRead {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: end;
+    width: 10%;
+}
+
+.pin {
+    width: 15px;
+}
+
+.ss {
+    height: 100vh;
+    width: 57vw;
+}
+
+/* .chatPreview {
+    
+    position: sticky;
+    top: 10x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 17%;
+    padding: 17% 10%;
+    background-color: #F0F2F5;
+    gap: 8px;
+    border: 5px solid #25D366;
+    border-width: 0px 0px 5px 0px;
+    overflow: hidden;
+} */
+
+.chatPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 17%;
+    padding: 17% 10%;
+    background-color: #F0F2F5;
+    gap: 8px;
+    border: 5px solid #25D366;
+    border-width: 0px 0px 5px 0px;
+    overflow: hidden;
+}
+
+.chatPreview img {
+    width: 300px;
+}
+.heisen{
+border-radius: 100%;
+aspect-ratio: 1;
+}
